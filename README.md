@@ -2,7 +2,7 @@ Strange Traffic uses an FTP server to send the regular FTP information accross a
 
 # Installation #
 
-copy vsftpd-3.0.3 to the Docker
+copy vsftpd-3.0.3 to the Docker (The Dockerfile should have copied it to the home directory)
 
 run the following commands (you may need to use sudo)
 
