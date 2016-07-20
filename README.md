@@ -44,6 +44,12 @@ ftp.sendcmd('noop')
 Which will have the following output
 
 
+
+```
+#!python
+
 '200 The Flag is MCA-5FA6F6EB'
+```
+
 
 The packet should also be able to be found using Wireshark; however, some FTP clients don't allow for the user to trigger a NOOP command.
