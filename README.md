@@ -8,12 +8,12 @@ run the following command
 ```
 #!bash
 
-docker build .
+docker-compose up
 ```
 
 # Start Server #
 
-run the following command
+run the following command (in docker)
 
 ```
 #!bash
