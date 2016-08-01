@@ -13,7 +13,7 @@ docker-compose up
 
 # Start Server #
 
-run the following command (in docker)
+The server should already be up but if no run the following command
 
 ```
 #!bash
