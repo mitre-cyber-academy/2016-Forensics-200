@@ -11,17 +11,6 @@ run the following command
 docker-compose up
 ```
 
-# Start Server #
-
-The server should already be up but if not run the following command
-
-```
-#!bash
-
-/usr/local/sbin/vsftpd &
-```
-
-
 The FTP server is now running
 
 # Solution #
