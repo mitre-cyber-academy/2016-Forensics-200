@@ -1,5 +1,3 @@
-# escape=`
-
 FROM ubuntu:14.04
 RUN apt-get update && apt-get install -y build-essential
 RUN apt-get -y install python2.7
@@ -11,8 +9,6 @@ RUN chown root.root /var/ftp
 RUN chmod og-w /var/ftp
 
 COPY vsftpd-3.0.3 /home
-COPY rc.local /etc
-COPY bash.bashrc /etc
 
 RUN mkdir /usr/local/sbin/vsftpd
 RUN mkdir /usr/local/man/man5
@@ -22,4 +18,4 @@ RUN make -C /home/
 RUN make install -C /home/
 RUN cp /home/vsftpd.conf /etc/
 
-RUN chmod 755 /etc/rc.local
+ENTRYPOINT ["/usr/local/sbin/vsftpd/vsftpd"]
