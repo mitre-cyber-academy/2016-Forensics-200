@@ -6,3 +6,4 @@ services:
      - "21:21"
     volumes:
      - .:/code
+    restart: always
